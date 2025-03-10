@@ -87,7 +87,7 @@ html{
 
 /* navbar sections starts */
 .header{
-    padding: 3rem 9%;
+    padding: 1rem 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,39 +96,57 @@ html{
     right: 0%;
     left: 0;
     z-index: 10000;
-    background-color: #fff;
+    background-color: #00fa99;
     box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 15px;
+    background: linear-gradient(90deg, rgba(255, 170, 0, 0.6), rgba(255, 204, 102, 0.6), rgba(255, 170, 0, 0.6));
+    filter: blur(5px);
+    z-index: -1;
+    border-radius: 70%;
 }
 
 
 .header .logo{
     cursor: pointer;
+    top: 0;
+    right: 0%;
+    left: 0;
 }
 
 
 .header .navbar a{
     margin-left: 2rem;
     font-size: 1.7rem;
-    text-transform: uppercase;
+    color: black;
+    text-transform: capitalize;
 }
 
 
 .header .navbar a:hover{
-    color: var(--Soft-Red);
+    color: yellow;
 }
 
 
 .header .navbar .btn{
     padding: .6rem 3rem;
-    background-color: var(--Soft-Red);
-    color: #fff;
+    background: #F2DB76;
+    background: linear-gradient(135deg, #F2DB76, #E2C91C);
+    color: black;
     border-radius: .5rem;
 }
 
 .header .navbar .btn:hover{
-    color: var(--Soft-Red);
-    background-color: transparent;
-    border: 2px solid var(--Soft-Red);
+    color: yellow;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    border: yellow;
 }
 
 #menu-btn{
@@ -200,12 +218,13 @@ html{
 /* home section starts  */
 
 .home{
-    padding-top: 15rem;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     /* main property for responsiveness */
     gap: 1.5rem;
+    background-color:#F5FEFD;
 }
 
 
@@ -228,14 +247,20 @@ html{
 .home .content h1{
     font-size: 4.5rem;
     padding-block-end: 1rem 0;
-    color: var(--Very-Dark-Blue);
+    color: black;
+}
+
+.home .content span{
+    font-size: 4.5rem;
+    padding-block-end: 1rem 0;
+    color: #0FFF50;
 }
 
 .home .content p{
     font-size: 1.7rem;
     padding: 1rem 0;
-    max-width: 40rem;
-    color: var(--Grayish-Blue);
+    max-width: 50rem;
+    color: #1B1B1B;
     padding-bottom: 4rem;
 }
 
