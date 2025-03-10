@@ -14,8 +14,12 @@ Hirize is an all-in-one job preparation platform designed to help candidates bec
 - Helps candidates improve both technical and soft skills.
 - Generates job readiness reports highlighting strengths and areas for improvement.
 
-## Why Hirize is Different
+## Workflow
 
+![Image](images/Workflow.jpeg)
+
+
+## Why Hirize is Different
 Hirize is a comprehensive placement-ready portal that integrates multiple job preparation resources in one place, making the job search and preparation process seamless. Unlike traditional job portals, Hirize provides:
 
 - A unified platform for resume optimization, interview preparation, job postings, and skill assessments.
