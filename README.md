@@ -16,7 +16,8 @@ Hirize is an all-in-one job preparation platform designed to help candidates bec
 
 ## Workflow
 
-![Image](images/Workflow.jpeg)
+![workflow](https://github.com/user-attachments/assets/5e7f0c1a-c4b3-4088-9750-2762dd2c2b56)
+
 
 
 ## Why Hirize is Different
