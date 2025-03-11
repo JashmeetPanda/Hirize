@@ -265,39 +265,142 @@ header::after {
 
 /* features section starts  */
 
-.features .row{
+/* Features Section */
+.features {
+    padding: 5rem 0;
+    background:#FBFFF8;
+    text-align: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Heading */
+.features .heading {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.features .heading h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:#090a44	;
+}
+
+.features .heading p {
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Features Container */
+.features-container {
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-    margin: 3rem 0;
-    
-}
-
-.features .row .image{
-    flex: 1 1 45rem;
-}
-
-.features .row .image img{
     width: 100%;
 }
 
-.features .row .content{
-    flex: 1 1 45rem;
+/* Feature Box */
+.feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem 5rem;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 90%; /* Leaves space on the sides */
+    margin: 0 auto; /* Centers it */
 }
 
-.features .row .content h1{
-    font-size: 4rem;
-    padding: 1rem 0;
-    color: var(--Very-Dark-Blue);
+
+/* Apply hover effect to entire feature box */
+.feature-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(255, 193, 7, 0.2); /* Soft yellow */
 }
 
-.features .row .content p{
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    color: var(--Grayish-Blue);
-    padding-bottom: 4rem;
+/* Reverse Layout for Alternate Rows */
+.feature-box.reverse {
+    flex-direction: row-reverse;
 }
+
+/* Image */
+.feature-box .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-box .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Content */
+.feature-box .content {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+}
+
+.feature-box .content h1 {
+    font-size: 2.8rem;
+    color: #1d3557;
+    margin-bottom: 1rem;
+}
+
+.feature-box .content p {
+    font-size: 1.6rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* CTA Button */
+.all-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: #FFBF00;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.all-btn:hover {
+    background: green;
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .feature-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .feature-box.reverse {
+        flex-direction: column;
+    }
+
+    .feature-box .content {
+        padding: 1.5rem;
+    }
+
+    .feature-box .image img {
+        width: 80%;
+    }
+}
+
 /* features section ends */
 
 /* downloads section starts  */
