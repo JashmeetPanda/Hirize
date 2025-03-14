@@ -364,7 +364,7 @@ header::after {
 }
 
 /* CTA Button */
-.all-btn {
+.feature-box .all-btn {
     display: inline-block;
     padding: 12px 20px;
     font-size: 1.5rem;
@@ -376,7 +376,7 @@ header::after {
     transition: 0.3s;
 }
 
-.all-btn:hover {
+.feature-box .all-btn:hover {
     background: green;
     transform: scale(1.05);
     color: white;
