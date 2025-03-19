@@ -264,7 +264,42 @@ header::after {
 
 
 /* home section ends */
+.logo-ribbon {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #ffffff;
+    padding: 10px 0;
+    position: relative;
+}
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    animation: slide 40s linear infinite;
+}
+
+
+/* Logo Images */
+.logo-container img {
+     height: 30px; /* Adjust based on needs */
+     transition: transform 0.3s ease-in-out;
+}
+
+        /* Hover Effect */
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 /* features section starts  */
 
 /* Features Section */
