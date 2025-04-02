@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deloitte Interview Questions</title>
+    <link rel="icon" type="images/png" href="/images/hirize (1).jpg">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../images/hirize (2).png" height="42" width="160" alt="logo-bookmark">
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="btn">Home</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu-btn">☰</div>
+    </header>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Deloitte.svg/1200px-Deloitte.svg.png" alt="Deloitte Logo">
+        </div>
+        <h1>Deloitte Interview Questions for Freshers</h1>
+        
+        <h2>Technical Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span>  What is backpropagation?</div>
+            <div class="answer">
+                Backpropagation is a technique used in artificial intelligence (AI) to fine-tune mathematical weight functions and increase the accuracy of an artificial neural network’s outputs.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span> What are the differences between Echo and Print in PHP?</div>
+            <div class="answer">
+                <table border="1">
+                    <tr>
+                        <th>Echo Statement</th>
+                        <th>Print Statement</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>Multiple arguments separated by commas can be passed to Echo.</td>
+                        <td>Multiple parameters cannot be passed in Print.</td>
+                    </tr>
+                    <tr>
+                        <td>We can display the outputs of one or more strings separated by commas in Echo.</td>
+                        <td>We can only display the strings using the Print statement.</td>
+                    </tr>
+                    <tr>
+                        <td>With or without parenthesis, echo can be used.</td>
+                        <td>Printing can be done with or without parenthesis.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span>  Write a program to reverse any number using C and C++.</div>
+            <div class="answer">
+                <code>
+                    #include
+using namespace std;<br>
+int main ()
+{<br>
+int num, reverse = 0, rem;<br>
+
+printf("Enter a number: ");<br>
+scanf("%d",&num);
+<br>
+while(num != 0)
+{<br>
+rem = num % 10;<br>
+reverse = reverse * 10 + rem;<br>
+num /= 10;<br>
+};<br>
+
+
+printf("Reverse: %d",reverse);<br>
+<br>
+return 0;<br>
+}
+                </code>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span>  What are access specifiers in C++?</div>
+            <div class="answer">
+                There are three types of access specifiers in C++:
+                <ul>
+                    <li><strong>Public: </strong>Members can be accessed (or viewed) from outside the class if they are public. </li>
+                    <li><strong>Private: </strong> Members cannot be accessed (or viewed) from outside the class if they are private.</li>
+                    <li><strong>Protected: </strong>Members that are protected cannot be accessible from outside the class, although they can be accessed in inherited classes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span>Write a program to check whether a number can be expressed as a sum of two prime numbers using JAVA.</div>
+            <div class="answer">
+                <code>
+                    import java.util.Scanner;<br>
+public class Main
+{<br>
+	public static void main(String[] args)
+	{<br>
+		Scanner sc = new Scanner(System.in);<br>
+		System.out.print("Enter a number : ");	<br>			
+		int number = sc.nextInt();<br>
+		int x = 0;<br>
+		for(int i = 2 ; i <= number/2 ; i++)
+		{<br>
+			if(prime_or_not(i) == 1)
+			{<br>
+				if(prime_or_not(number-i) == 1)
+				{<br>
+					System.out.println(number+ " = "+i+" + "+(number-i));<br>
+					x = 1;<br>
+                }<br>
+            }<br>
+        }<br>
+		if(x == 0)<br>
+			System.out.println(+number+" cannot be expressed as a sum of two prime numbers");<br>
+    }<br>
+	public static int prime_or_not(int n)
+	{<br>
+        int c = 1;<br>
+		for(int i = 2 ; i < n ; i++)
+		{<br>
+			if(n % i == 0)<br>
+			{<br>
+				c = 0;<br>
+				break;<br>
+            }<br>
+        }<br>
+		return c;<br>
+    }<br>
+}<br>
+
+                </code>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span> Define Hash join, merge join, and nested loop joins in DBMS.</div>
+            <div class="answer">
+               <ul>
+                <li><strong>Hash Join: </strong>When you need to join several huge tables, you use the hash join.</li>
+                <li><strong>Merge Join:</strong>When the projections of the connected tables are sorted on the join columns, a merge join is employed.</li>
+                <li><strong>Nested loop join:</strong>The mechanism of Nested Loops Join is quite simple. The table with the least records is chosen, and the program will loop through the second table until matches are found. As you can see, this is a poor choice for large tables. As a result, this is mostly employed when there is a table with fewer records and the joining field is indexed in the second table.</li>
+               </ul>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">6.</span> How can JavaScript be used?</div>
+            <div class="answer">
+                Javascript is a programming language used by programmers all over the world to develop dynamic and interactive web content such as programs and browsers.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">7.</span>  Define database normalization.</div>
+            <div class="answer">
+                The practice of arranging a relational database in line with a set of so-called normal forms in order to eliminate data redundancy and increase data integrity is known as database normalization.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">8.</span> What do you understand by the term clustering support?</div>
+            <div class="answer">
+                <p>The objective of clustering is to divide the population or set of data points into a number of groups so that the data points within each group are more similar to one another and different from the data points within the other groups. It is essentially a grouping of objects based on how similar and unlike they are to one another.</p>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">9.</span>Define SMTP.</div>
+            <div class="answer">
+                The Simple Mail Transfer Protocol is a widely used internet protocol for sending electronic mail. SMTP is a protocol that allows mail servers and other message transfer agents to send and receive mail messages.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">10.</span>  Define tunnel mode.</div>
+            <div class="answer">
+                <p>A method of delivering data over the Internet known as “tunnel mode” encrypts both the material being sent and the original IP address information. Both transport mode and tunnel mode are used by the encapsulating security payload (ESP). ESP encrypts the IP header information and the data when in Tunnel Mode.</p>
+            </div>
+        </div>
+        </div>
+
+        <h2>HR Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span> Tell me about yourself.</div>
+            <div class="answer">
+                I stumbled upon your job description as a college grad. As per my understanding, the role requires a calm, self-assured person who is eager to take on new challenges. I am positive that I am the best candidate for this job. I studied programming on my own as a student of Mechanical Engineering. I’ve created projects that you can find on my Github, and I’m constantly learning new skills. I was an active part of the student body in my engineering class and served as a liaison between students and instructors. Perhaps my greatest strength is that I never back down from a challenge and always confront a problem square in the face. In your organization, I would be a valuable asset.
+            </div>
+        </div>
+        
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span> Explain how you would be an Asset to this Organization.</div>
+            <div class="answer">
+                You should hire me because I have excellent communication skills and can effectively speak with others. If you want to see the difference, I am ready to join you right now. I am self-assured and enthusiastic, and I work hard. I’m interested in working for your company.
+        </div>
+    </div>
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span> What is the most difficult situation that you have ever faced in life?</div>
+            <div class="answer">
+                The most difficult task in my job experience was being expected to manage a new technological domain as part of my project. Despite my training in technology, it was difficult to understand the needs and validate the work required. My manager, on the other hand, was a lovely person who stayed by me in the early days and gave me extra days to work things out. After a few jobs, I was on my way to being an expert and was able to assist many of the others who joined me.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span> What are your plans for higher education?</div>
+            <div class="answer">
+                While I have no intentions to pursue a master’s degree at this time, I am interested in continuing my education, whether it is internal or external. 
+                The trends in our industry change so quickly, that I strive to keep up with them through my own personal research. In the past, my employer has also 
+                sent me to regular business training to keep my skills up to date.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span> On a scale of one to ten, rate me as an interviewer.</div>
+            <div class="answer">
+                I don’t think I’m eligible to judge you since this is my first interview, but I can tell that you are incredibly engaging and supportive. Most likely, your firm sent you here because of how well you interviewed. I give you a 9 out of 10 because you may have years of expertise in this industry.
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

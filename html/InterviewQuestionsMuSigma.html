@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuSigma Interview Questions</title>
+    <link rel="icon" type="images/png" href="/images/hirize (1).jpg">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../images/hirize (2).png" height="42" width="160" alt="logo-bookmark">
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="btn">Home</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu-btn">☰</div>
+    </header>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://www.mu-sigma.com/wp-content/uploads/2023/10/mu_logo_new.png" alt="MuSigma Logo">
+        </div>
+        <h1>MuSigma Interview Questions for Freshers</h1>
+        
+        <h2>Technical Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span> What is procedural programming?</div>
+            <div class="answer">
+                Procedural Programming may be the first programming paradigm learned by a new developer. The procedural code, in its simplest form, is the code that tells a device how to do a task in a logical sequence. Data and methods are seen as two distinct entities in this paradigm, which follows a linear top-down approach.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span> What do you mean by Run Time Error?</div>
+            <div class="answer">
+                A runtime error arises when a program is syntactically correct but contains an issue that is only discovered during program execution. The Java compiler cannot detect these problems at compile time, and the Java Virtual Machine (JVM) detects them only when the application is running.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span>  What is Control System?</div>
+            <div class="answer">
+                When the output and inputs of a system are interconnected in such a way that the output quantity or variable is controlled by the input quantity, the system is referred to as a control system. The controlled variable or response is the output quantity, while the command signal or excitation is the input quantity.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span>   What are the major Data Structures used in RDBMS, Network Data Model and Hierarchical Data Model?</div>
+            <div class="answer">
+                <ul>
+                    <li>RDBMS: Array (i.e., Array of structures)</li>
+                    <li>Network data model: Graph</li>
+                    <li>Hierarchical data model: Trees</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span> Write code to find a friendly pair or not in C.</div>
+            <div class="answer">
+                <code>
+                    #include <br>
+int getDivisorsSum(int num){<br>
+    
+    int sum = 0;<br>
+    
+    for(int i = 1; i < num; i++){<br>
+        if(num % i == 0)<br>
+            sum = sum + i;<br>
+    }<br>
+    return sum;<br>
+}<br>
+
+int main ()
+{<br>
+    int num1 = 6, num2 = 28;<br>
+    
+    int sum1 = getDivisorsSum(num1);<br>
+    int sum2 = getDivisorsSum(num2);<br>
+    
+    if(sum1/num1 == sum2/num2)<br>
+        printf("(%d, %d) are friendly pairs", num1, num2);<br>
+    else<br>
+        printf("(%d, %d) are not friendly pairs", num1, num2);<br>
+<br>
+    
+}
+                    
+                </code>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span>What are the different layers in the OSI model?</div>
+            <div class="answer">
+                <p>Layers of the OSI model are:</p>
+                <ul>
+                    <li>Application layer ( 7th Layer)</li>
+                    <li>Presentation layer (6th Layer)</li>
+                    <li>Session layer (5th Layer)</li>
+                    <li>Transport layer(4th Layer)</li>
+                    <li>  Network layer(3rd Layer)</li>
+                    <li>Data Link layer (2nd Layer)</li>
+                    <li>Physical layer(1st Layer)</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">6.</span> Which operation in SQL performs pattern-matching?</div>
+            <div class="answer">
+                LIKE operator performs pattern matching in SQL.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">7.</span>  What is UNIX?</div>
+            <div class="answer">
+                UNIX is an entire operating system package designed primarily for servers, workstations, and mainframes. It is a trademarked name. It can only be used by the copyright holders. It features an entirely distinct coding devised by AT&T labs, is highly secure, and has listed approximately 85-120 viruses to date.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">8.</span>  Which software model is most efficient?</div>
+            <div class="answer">
+                <p>The Waterfall Development Method is the most effective software development model.</p>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">9.</span>What is polymorphism?</div>
+            <div class="answer">
+                It is absolutely remarkable in its ability to construct many diverse shapes with only one use of a function. The term merely implies this because poly means many or several times and morphism denotes shapes. As a result, its primary function in the Java programming language is to process many sorts of classes and objects via a single piece of an interface, which distinguishes it.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">10.</span> What is DLL and EXE file extension?</div>
+            <div class="answer">
+                <ul>
+                    <li><strong>EXE</strong> file extension is used for executable files, it recognizes the file as a program. It runs independently. An EXE creates separate memory and process space for it.</li>
+                    <li><strong>DLL</strong> stands for a dynamic link library that has functions and procedures used by other applications. This DLL can be reused by multiple applications. It will share the same memory and process space of the calling application.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <h2>HR Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span>Tell me something not mentioned in your resume.</div>
+            <div class="answer">
+                One aspect not mentioned in my resume is my involvement in volunteer work at a local non-profit organization focused on teaching coding skills to underprivileged youth. This experience has been incredibly rewarding as it allowed me to share my passion for technology while making a positive impact in my community. It also helped me develop strong communication skills as I learned how to explain complex concepts in an accessible way. Through this work, I’ve realized the importance of giving back and keeping interest in technology among younger generations.
+        </div>
+        </div>
+        
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span> Who is the current CEO of Mu Sigma</div>
+            <div class="answer">
+                Dhiraj C Rajaram is the current CEO of Mu Sigma.
+        </div>
+    </div>
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span>Are you comfortable working night shifts?</div>
+            <div class="answer">
+                Yes, I am comfortable working night shifts if required by the role. I understand that certain projects may necessitate flexible hours due to client needs or collaboration across different time zones. My priority is contributing effectively to my team and ensuring project success, so I am willing to adapt my schedule as needed. Additionally, I believe that flexibility can lead to unique opportunities for collaboration with global teams, enhancing both personal growth and project outcomes.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span> How do you lead people?</div>
+            <div class="answer">
+                As a team leader, I’ve always believed that we shouldn’t ask a team member to perform anything that we can do better ourselves. And I follow this guideline. My co-workers are aware that I will never ask them to do anything that I won’t do myself. This builds team trust and promotes productivity at work.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span>Do you have any questions for us?</div>
+            <div class="answer">
+                Yes, thank you for asking. I’m curious about the opportunities for professional development within MuSigma, specifically how the company supports employees who wish to pursue further education or certifications. Additionally, could you share more about the team within the department I’ll potentially be joining? Understanding these aspects will help me understand how well I can align with the company’s goals while also pursuing my career aspirations effectively.
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
