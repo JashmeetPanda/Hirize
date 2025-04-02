@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldmanSachs Interview Questions</title>
+    <link rel="icon" type="images/png" href="/images/hirize (1).jpg">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../images/hirize (2).png" height="42" width="160" alt="logo-bookmark">
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="btn">Home</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu-btn">☰</div>
+    </header>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://www.pngmart.com/files/23/Goldman-Sachs-Logo-PNG-Isolated-HD.png" alt="Goldmansachs Logo">
+        </div>
+        <h1>Goldmansachs Interview Questions for Freshers</h1>
+        
+        <h2>Technical Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span>   What is diamond's problem in C++?</div>
+            <div class="answer">
+                When two parent classes share a grandparent class and both parent classes are inherited by a single child class, an issue known as the Diamond Problem occurs in multiple inheritances.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span> What is a deadlock?</div>
+            <div class="answer">
+                When two computer programs that are using the same resource effectively block each other from using it, the programs become dysfunctional. This circumstance is known as a deadlock.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span>  Write a program to print nonrepeating elements in an array.</div>
+            <div class="answer">
+                <code>
+                    #include <stdio.h><br>
+                        int main() 
+                        { <br>
+                            int arr[] = {21, 30, 10, 2, 10, 20, 30, 11}; <br>
+                            int n = sizeof(arr)/sizeof(arr[0]); <br>
+                        
+                            int visited[n];<br>
+                            for(int i=0; i<n; i++)
+                            { 
+                             <br>
+                               if(visited[i]==0){<br>
+                                  int count = 1;<br>
+                                  for(int j=i+1; j<n; j++){ <br>
+                                     if(arr[i]==arr[j]){ <br>
+                                        count++;<br>
+                                        visited[j]=1;<br>
+                                     }<br>
+                                  }<br>
+                                 if(count==1)<br>
+                                  printf("%d ",arr[i]);<br>
+                               }<br>
+                            }<br>
+                           
+                           return 0;<br> 
+                        }  <br>
+                </code>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span>  What are processes and threads in the context of OS?</div>
+            <div class="answer">
+                <ul>
+                    <li><strong>Process:</strong>The programs that are dispatched from the ready state and scheduled for execution in the CPU are basically called processes. </li>
+                    <li><strong>Thread:  </strong>  A thread is a segment of a process, which implies that a process can have several threads, and these multiple threads are held within a process. A thread can be in one of three states: running, ready, and blocked.</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span>Write a program to check whether a number can be expressed as a sum of two prime numbers using JAVA.</div>
+            <div class="answer">
+                <code>
+                    import java.util.Scanner;<br>
+public class Main
+{<br>
+	public static void main(String[] args)
+	{<br>
+		Scanner sc = new Scanner(System.in);<br>
+		System.out.print("Enter a number : ");	<br>			
+		int number = sc.nextInt();<br>
+		int x = 0;<br>
+		for(int i = 2 ; i <= number/2 ; i++)
+		{<br>
+			if(prime_or_not(i) == 1)
+			{<br>
+				if(prime_or_not(number-i) == 1)
+				{<br>
+					System.out.println(number+ " = "+i+" + "+(number-i));<br>
+					x = 1;<br>
+                }<br>
+            }<br>
+        }<br>
+		if(x == 0)<br>
+			System.out.println(+number+" cannot be expressed as a sum of two prime numbers");<br>
+    }<br>
+	public static int prime_or_not(int n)
+	{<br>
+        int c = 1;<br>
+		for(int i = 2 ; i < n ; i++)
+		{<br>
+			if(n % i == 0)<br>
+			{<br>
+				c = 0;<br>
+				break;<br>
+            }<br>
+        }<br>
+		return c;<br>
+    }<br>
+}<br>
+
+                </code>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span> What is hashCode() in Java?</div>
+            <div class="answer">
+                In Java, a hashCode function returns the hashcode value of an object when called. As a result of the hashing process, it returns an integer or a value of 4 bytes. Hashing is the process of providing a unique value to an object or property using an algorithm to allow for quicker access.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">6.</span> What is data structure?</div>
+            <div class="answer">
+                A data structure is a method of arranging data that takes into account both the things contained and their connections with one another. Advanced understanding of the relationships between data elements enables the creation of effective data manipulation algorithms.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">7.</span> What are local and global page replacements?</div>
+            <div class="answer">
+                Local replacement refers to bringing an incoming page exclusively into the appropriate process address space.<br>
+The global replacement policy enables the replacement of any page frame from any process. Only the variable partitions model may use the latter.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">8.</span> What do you understand by the term clustering support?</div>
+            <div class="answer">
+                <p>The objective of clustering is to divide the population or set of data points into a number of groups so that the data points within each group are more similar to one another and different from the data points within the other groups. It is essentially a grouping of objects based on how similar and unlike they are to one another.</p>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">9.</span>Define SMTP.</div>
+            <div class="answer">
+                The Simple Mail Transfer Protocol is a widely used internet protocol for sending electronic mail. SMTP is a protocol that allows mail servers and other message transfer agents to send and receive mail messages.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">10.</span>  What is Domain-Key Normal Form?</div>
+            <div class="answer">
+                <p>A relation is said to be in DKNF if all dependencies and constraints that must hold on the constraint can be enforced by only imposing the domain constraint and key control on the relation.</p>
+            </div>
+        </div>
+        </div>
+
+        <h2>HR Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span> Introduce YourSelf</div>
+            <div class="answer">
+                Good morning sir/madam.
+                First and foremost, thank you for providing me with this chance to introduce myself. My name is Utpal Sharma. I’m a native of Patna, Bihar. I went to XYZ Senior Secondary School for my schooling. I graduated from ABC Institute of Technology with a bachelor of technology after finishing my schooling. My interests include playing cricket, reading, and listening to music. My strengths are that I am a quick learner, a hard worker, and self-motivated.
+                Once again, thank you for the opportunity.
+            </div>
+        </div>
+        
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span>  What software are you familiar with?</div>
+            <div class="answer">
+                I’m proficient with programs like PowerPoint and Microsoft Excel. I’m now taking a course in Power BI and Azure, and soon I’ll be an expert.
+        </div>
+    </div>
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span> What is the most difficult situation that you have ever faced in life?</div>
+            <div class="answer">
+                The most difficult task in my job experience was being expected to manage a new technological domain as part of my project. Despite my training in technology, it was difficult to understand the needs and validate the work required. My manager, on the other hand, was a lovely person who stayed by me in the early days and gave me extra days to work things out. After a few jobs, I was on my way to being an expert and was able to assist many of the others who joined me.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span> How do you lead people?</div>
+            <div class="answer">
+                As a team leader, I’ve always believed that we shouldn’t ask a team member to perform anything that we can do better ourselves. And I follow this guideline. My coworkers are aware that I will never ask them to do anything that I won’t do myself. This builds team trust and promotes productivity at work.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span>Tell me about your strengths and weaknesses.</div>
+            <div class="answer">
+                I work with complete dedication and attention since I am an adaptable, responsive, and honest person. This is what I view as my Strength. My weakness is that I tend to be more of an introvert, and sometimes I find myself being reluctant to voice my opinions in front of a crowd. However, I am trying to overcome this flaw.
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
