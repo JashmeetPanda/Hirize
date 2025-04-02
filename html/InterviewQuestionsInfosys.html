@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys Interview Questions</title>
+    <link rel="icon" type="images/png" href="/images/hirize (1).jpg">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../images/hirize (2).png" height="42" width="160" alt="logo-bookmark">
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="btn">Home</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu-btn">☰</div>
+    </header>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://pnghq.com/wp-content/uploads/infosys-logo-png-free-image-png-38978-1536x567.png" alt="Infosys Logo">
+        </div>
+        <h1>Infosys Interview Questions for Freshers</h1>
+        
+        <h2>Technical Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span>How method overloading is different from method overriding?</div>
+            <div class="answer">
+               <ul>
+                <li><strong>Method overloading </strong>means methods are having the same name, but they differ either in the number of arguments or in the type of arguments. It is done during compile time, so it is known as compile-time polymorphism.</li>.
+                <li><strong>Method overriding</strong>means the ability to define subclass and super-class methods with the same name as well as the same method signatures, here the subclass method will override the super-class method. It is performed during run time, so it is known as run-time polymorphism.</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span> What is a foreign key?</div>
+            <div class="answer">
+                A foreign key is a field in one table that references the primary key in another table. The table containing the foreign key is referred to as the child table, whereas the table containing the main key is referred to as the referenced or parent table.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span>  What are DDL and DML commands in SQL?</div>
+            <div class="answer">
+                <ul>
+                    <li>DDL refers to Data Definition Language. DDL commands are used to define database schema i.e., to create and modify the database object structure in the database. Examples are CREATE, ALTER, DROP, TRUNCATE, etc.</li>
+                    <li>DML refers to Data Manipulation Language. DML commands are used to manipulate the data within the database. Examples are: INSERT, UPDATE, DELETE.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span>   Why indexing in SQL is useful ?</div>
+            <div class="answer">
+                A SQL index is a quick lookup table that helps to find records that are frequently searched by a user. An index is fast, small, and optimized for quick look-ups. It is useful for establishing a connection between the relational tables, searching large tables, and fast retrieval of data from a database.
+            </div>
+        </div>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span> Write a program to print ASCII code for a character using JAVA.</div>
+            <div class="answer">
+                <code>
+                    import java.util.Scanner;<br>
+                    class Main
+                    {<br>
+                        public static void main(String[] args)
+                        {<br>
+                            char c='A';	<br>
+                            int i = c;<br>
+                            System.out.println("ASCII value of "+c+" is "+i);<br>
+                            
+                        }<br>
+                    }<br>
+                    
+                </code>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span>What is meant by a null pointer?</div>
+            <div class="answer">
+                The pointer that does not point to any memory location is called the null pointer. It implies the pointer is empty and it is not pointing to anywhere within the memory.
+                Example: int *pointer=NULL;<br>
+                Null pointers can be used for initializing the memory location address with the pointer of the same data type.
+                Example: int *pointer= (int*)NULL;
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">6.</span> What is the order of B+ tree?</div>
+            <div class="answer">
+                A B+ tree of order m is a search tree with up to m children for each non-leaf node. The actual components of the collection are stored in the tree’s leaves, whereas the non-leaf nodes hold just keys.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">7.</span>  What are BLOCK statements in SQL?</div>
+            <div class="answer">
+                A block is the smallest significant collection of code in SQL, as it is in most other procedural languages. A block is a unit of code that supports variable declaration and exception handling with execution and scoping boundaries.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">8.</span> What is SDLC(Software Development Life Cycle)?</div>
+            <div class="answer">
+                <p> SDLC is an end-to-end process that defines the software development flow starting from the requirements stage to the maintenance and support stage. The SDLC stages are requirements analysis, planning, definition, design, development, testing, deployment, maintenance, and support.</p>
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">9.</span>What is polymorphism?</div>
+            <div class="answer">
+                It is absolutely remarkable in its ability to construct many diverse shapes with only one use of a function. The term merely implies this because poly means many or several times and morphism denotes shapes. As a result, its primary function in the Java programming language is to process many sorts of classes and objects via a single piece of an interface, which distinguishes it.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">10.</span> What is DLL and EXE file extension?</div>
+            <div class="answer">
+                <ul>
+                    <li><strong>EXE</strong> file extension is used for executable files, it recognizes the file as a program. It runs independently. An EXE creates separate memory and process space for it.</li>
+                    <li><strong>DLL</strong> stands for a dynamic link library that has functions and procedures used by other applications. This DLL can be reused by multiple applications. It will share the same memory and process space of the calling application.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <h2>HR Interview</h2>
+
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">1.</span>Tell me about yourself without mentioning your personal details.</div>
+            <div class="answer">
+                I graduated with a degree in computer science from XYZ University, where I developed a strong foundation in programming and software development. During my time at university, I completed internships at ABC Tech and DEF Solutions, where I worked on several projects involving web development and data analysis. I am passionate about technology and enjoy solving complex problems. 
+                In my free time, I contribute to open-source projects, which has helped me enhance my coding skills and collaborate with other developers. Additionally, I have a keen interest in emerging technologies like artificial intelligence and machine learning, which I believe are shaping the future of our industry.
+            </div>
+        </div>
+        
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">2.</span>  Why do you want to join Infosys?</div>
+            <div class="answer">
+                I want to join Infosys because it is renowned for its commitment to innovation and excellence in the IT sector. I admire the company’s focus on employee development through extensive training programs and mentorship opportunities. Additionally, Infosys’s global presence excites me as it provides a platform to work on diverse projects that have a meaningful impact. 
+                I believe that being part of such a forward-thinking organization will allow me to grow both personally and professionally. Moreover, the company’s emphasis on sustainability and corporate social responsibility resonates with my values, making it an ideal place for me to contribute positively.
+        </div>
+    </div>
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">3.</span>Are you comfortable working night shifts?</div>
+            <div class="answer">
+                Yes, I am comfortable working night shifts if required by the role. I understand that certain projects may necessitate flexible hours due to client needs or collaboration across different time zones. My priority is contributing effectively to my team and ensuring project success, so I am willing to adapt my schedule as needed. Additionally, I believe that flexibility can lead to unique opportunities for collaboration with global teams, enhancing both personal growth and project outcomes.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">4.</span> How do you lead people?</div>
+            <div class="answer">
+                As a team leader, I’ve always believed that we shouldn’t ask a team member to perform anything that we can do better ourselves. And I follow this guideline. My coworkers are aware that I will never ask them to do anything that I won’t do myself. This builds team trust and promotes productivity at work.
+            </div>
+        </div>
+    
+        <div class="qa-section">
+            <div class="question"><span class="qn-num">5.</span>Why should we hire you?</div>
+            <div class="answer">
+                You should hire me because I bring a unique combination of technical skills and a strong work ethic that aligns well with Infosys’s values. My academic background in computer science has equipped me with solid programming skills, while my internships provided hands-on experience in real-world applications. Additionally, my adaptability allows me to thrive in work environments like Infosys. I am passionate about technology and committed to delivering high-quality results. Furthermore, my proactive approach means that I’m always looking for ways to improve processes and contribute positively to teamwork.
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
