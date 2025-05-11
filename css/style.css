@@ -848,36 +848,36 @@ header::after {
 /* downloads section ends */
 
 /* footer section starts */
-.footer .box-container{
+.footer1 .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap:2rem;
     background-color: #090a44;
 }
 
-.footer .box-container .box h3{
+.footer1 .box-container .box h3{
     font-size: 2.5rem;
     color:white;
     padding: 1rem 0;
 }
 
-.footer .box-container .box a{
+.footer1 .box-container .box a{
     display: block;
     font-size: 1.5rem;
     color:var(--light-color);
     padding: 1rem 0;
 }
 
-.footer .box-container .box a i{
+.footer1 .box-container .box a i{
     padding-right: .5rem;
     color:var(--green);
 }
 
-.footer .box-container .box a:hover i{
+.footer1 .box-container .box a:hover i{
     padding-right:1rem;
 }
 
-.footer .credit{
+.footer1 .credit{
     padding: 1rem;
     padding-top: 1rem;
     margin-top: 1rem;
@@ -887,7 +887,7 @@ header::after {
     /* border-top: .1rem solid rgba(0, 0, 0, .1); */
 }
 
-.footer .credit span{
+.footer1 .credit span{
     color: green;
     cursor: pointer;
 }
@@ -976,6 +976,88 @@ header::after {
 .modal-buttons button:hover::after {
     opacity: 1;
 }
+
+.footer {
+  background-color: #d3d3d3; /* Greyish background */
+  padding: 10px 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 100px;
+  margin: 20px;
+  padding: 0 7px; /* Added padding to both sides of each section */
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.site-link {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #000;
+  text-decoration: underline;
+  font-size: 16px; /* Slightly smaller font size for site link */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px; /* Slightly smaller font size for section titles */
+  color: #00563B;
+}
+
+.footer-section p {
+  font-size: 16px; /* Slightly smaller font size for paragraph text */
+  margin-bottom: 30px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px; /* Slightly smaller font size for list items */
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .copyright {
+  font-size: 14px; /* Slightly smaller font size for copyright text */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    min-width: 100%; /* Ensure sections take full width on small screens */
+    margin: 10px 0; /* Adjust margins for better spacing */
+  }
+}
+
 
 
 /* footer section ends */
