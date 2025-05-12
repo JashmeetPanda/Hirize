@@ -40,3 +40,7 @@ window.addEventListener("click", function (event) {
         modal.style.display = "none";
     }
 });
+
+document.getElementById("openModalBtn").addEventListener("click", function () {
+    document.getElementById("loginModal").style.display = "block";
+  });
