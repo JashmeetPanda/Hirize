@@ -44,3 +44,11 @@ window.addEventListener("click", function (event) {
 document.getElementById("openModalBtn").addEventListener("click", function () {
     document.getElementById("loginModal").style.display = "block";
   });
+
+
+  // Hide loader when page is fully loaded
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    loader.style.display = "none";
+  });
+
