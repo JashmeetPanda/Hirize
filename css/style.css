@@ -167,7 +167,7 @@ header::after {
     .header {
     padding: 0.8rem 1.5rem; /* Even smaller padding */
     }
-    
+
     #menu-btn{
         display: initial;
     }
@@ -301,6 +301,11 @@ header::after {
 .logo-container img:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .logo-container {
+        animation: slide 20s linear infinite; /* Faster than 40s */
+    }
 
 @keyframes slide {
     from {
