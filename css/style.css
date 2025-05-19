@@ -306,6 +306,7 @@ header::after {
     .logo-container {
         animation: slide 20s linear infinite; /* Faster than 40s */
     }
+}
 
 @keyframes slide {
     from {
