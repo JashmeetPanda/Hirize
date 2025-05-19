@@ -163,6 +163,11 @@ header::after {
 }
 
 @media (max-width: 768px){
+
+    .header {
+    padding: 0.8rem 1.5rem; /* Even smaller padding */
+    }
+    
     #menu-btn{
         display: initial;
     }
