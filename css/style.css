@@ -193,6 +193,11 @@ header::after {
 }
 
 @media (max-width: 450px){
+   
+    .header {
+    padding: 0.8rem 1.5rem; /* Even smaller padding */
+    }
+
     html{
         font-size: 50%;
     }
