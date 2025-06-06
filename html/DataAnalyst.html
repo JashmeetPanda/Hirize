@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Analyst Quizzes</title>
+  <link rel="icon" type="image/png" href="/images/skill-assesment-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #cceeff, #e0f7fa);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+      padding: 40px 30px;
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background: linear-gradient(135deg, #00b4d8, #0077b6);
+      color: white;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(0, 123, 255, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #0077b6, #023e8a);
+      transform: scale(1.02);
+      box-shadow: 0 6px 18px rgba(0, 123, 255, 0.35);
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .btn {
+        font-size: 0.95rem;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="/images/skill-assesment-logo.png" alt="Skill Check" />
+    <p>Test your skills with these quizzes!</p>
+    <h1>Data Analyst</h1>
+    <div class="btn-container">
+      <a href="https://www.proprofs.com/quiz-school/ugc/story.php?title=ndi5mjazmwfdc1" target="_blank" class="btn">Logical</a>
+      <a href="https://www.proprofs.com/quiz-school/ugc/story.php?title=ndi4nzy5nqp783" target="_blank" class="btn">Quantitative</a>
+      <a href="https://www.proprofs.com/quiz-school/ugc/story.php?title=sample-quiz05-3678g" target="_blank" class="btn">Verbal</a>
+      <a href="https://www.proprofs.com/quiz-school/ugc/story.php?title=sql-and-excel-questions" target="_blank" class="btn">SQL & Excel</a>
+      <a href="https://www.proprofs.com/quiz-school/ugc/story.php?title=python-questions-2fm" target="_blank" class="btn">Python</a>
+    </div>
+  </div>
+</body>
+</html>
