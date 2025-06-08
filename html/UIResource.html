@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI/UX Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #2c3e50;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .sidebar {
+      width: 220px;
+      background: linear-gradient(to bottom, #3498db, #2ecc71);
+      padding: 30px 20px;
+      color: white;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+    }
+
+    .sidebar button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #2c3e50;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+    }
+
+    .sidebar button:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+      padding: 60px;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 0 20px 20px 0;
+    }
+
+    .content h1 {
+      font-size: 36px;
+      color: #8e44ad;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #7f8c8d;
+      margin-bottom: 40px;
+    }
+
+    .resource-buttons a {
+      text-decoration: none;
+    }
+
+    .resource-buttons button {
+      display: block;
+      width: 60%;
+      margin: 20px auto;
+      padding: 18px;
+      border: none;
+      border-radius: 15px;
+      background: linear-gradient(to right, #6dd5ed, #2193b0);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s, transform 0.2s;
+    }
+
+    .resource-buttons button:hover {
+      background: linear-gradient(to right, #56ccf2, #2f80ed);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <h2>Other Roles</h2>
+      <a href="/html/SDEresources.html" target="_blank"><button>Software Developer</button></a>
+      <a href="/html/pjm.html"><button>Project Manager</button></a>
+      <a href="/html/daResource.html" target="_blank"><button>Data Analyst</button></a>
+    </nav>
+
+    <main class="content">
+      <h1>🎨 UI/UX Developer</h1>
+      <p class="subtitle">Explore top resources to build creative and user-centric designs</p>
+
+      <div class="resource-buttons">
+        <a href="https://www.figma.com/resource-library/design-basics/" target="_blank">
+          <button>Figma</button>
+        </a>
+        <a href="https://www.simplilearn.com/tutorials/ui-ux-career-resources/adobe-xd" target="_blank">
+          <button>Adobe XD</button>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+          <button>HTML & Semantic Design</button>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+          <button>CSS & Flexbox/Grid</button>
+        </a>
+        <a href="https://www.interaction-design.org/literature/topics/ux-design" target="_blank">
+          <button>UX Principles</button>
+        </a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
