@@ -9,6 +9,7 @@
     <link rel="icon" type="images/png" href="/images/hirize-favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
@@ -83,6 +84,7 @@
                 transform the way you prepare! Our AI-powered platform provides everything you need to stand out in
                 today’s competitive job market.</p>
                 <button class="home-btn open-modal-btn">Take a tour!</button>
+                <button id="celebrate-btn" class="home-btn" style="margin-top: 10px;">Celebrate!</button>
         </div>
 
         <div class="image">
@@ -607,6 +609,122 @@
     </section>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  const emojiArray = ['🎉', '🥳', '✨', '🎈', '🎊'];
+
+  // Create emoji rain container
+  const emojiContainer = document.createElement('div');
+  emojiContainer.style.position = 'fixed';
+  emojiContainer.style.top = 0;
+  emojiContainer.style.left = 0;
+  emojiContainer.style.width = '100%';
+  emojiContainer.style.height = '100%';
+  emojiContainer.style.pointerEvents = 'none';
+  emojiContainer.style.overflow = 'hidden';
+  emojiContainer.style.zIndex = 9999;
+  document.body.appendChild(emojiContainer);
+
+  // Balloon styles
+  const balloonColors = ['#ff4d4d', '#ffb84d', '#4d94ff', '#4dff88', '#ff4de6'];
+
+  function createEmoji() {
+    const emoji = document.createElement('div');
+    emoji.textContent = emojiArray[Math.floor(Math.random() * emojiArray.length)];
+    emoji.style.position = 'fixed';
+    emoji.style.fontSize = `${Math.random() * 30 + 20}px`;
+    emoji.style.left = `${Math.random() * window.innerWidth}px`;
+    emoji.style.top = '-50px';
+    emoji.style.opacity = Math.random();
+    emoji.style.willChange = 'transform, opacity';
+    emojiContainer.appendChild(emoji);
+
+    let fallDuration = Math.random() * 4000 + 4000; // 4-8 seconds
+
+    let start = null;
+    function fall(timestamp) {
+      if (!start) start = timestamp;
+      let progress = timestamp - start;
+      let percent = progress / fallDuration;
+      emoji.style.top = percent * window.innerHeight + 'px';
+      emoji.style.opacity = 1 - percent;
+      if (percent < 1) {
+        requestAnimationFrame(fall);
+      } else {
+        emojiContainer.removeChild(emoji);
+      }
+    }
+    requestAnimationFrame(fall);
+  }
+
+  function createBalloon() {
+    const balloon = document.createElement('div');
+    balloon.style.position = 'fixed';
+    balloon.style.bottom = '-100px';
+    balloon.style.left = `${Math.random() * window.innerWidth}px`;
+    balloon.style.width = '40px';
+    balloon.style.height = '60px';
+    balloon.style.backgroundColor = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+    balloon.style.borderRadius = '50% 50% 50% 50% / 60% 60% 40% 40%';
+    balloon.style.boxShadow = 'inset -5px -5px 10px rgba(255,255,255,0.3)';
+    balloon.style.opacity = 0.9;
+    balloon.style.willChange = 'transform, bottom';
+    balloon.style.zIndex = 10000;
+
+    document.body.appendChild(balloon);
+
+    let riseDuration = Math.random() * 4000 + 5000; // 5-9 seconds
+    let start = null;
+    function rise(timestamp) {
+      if (!start) start = timestamp;
+      let progress = timestamp - start;
+      let percent = progress / riseDuration;
+      balloon.style.bottom = (percent * window.innerHeight + 100) + 'px';
+      balloon.style.opacity = 1 - percent;
+      balloon.style.transform = `rotate(${percent * 360}deg)`;
+      if (percent < 1) {
+        requestAnimationFrame(rise);
+      } else {
+        document.body.removeChild(balloon);
+      }
+    }
+    requestAnimationFrame(rise);
+  }
+
+  function fireworksBurst() {
+    // 5 bursts with increasing spread and delay
+    for (let i = 0; i < 5; i++) {
+      setTimeout(() => {
+        confetti({
+          particleCount: 50,
+          spread: 60 + i * 10,
+          origin: { y: 0.7 }
+        });
+      }, i * 300);
+    }
+  }
+
+  document.getElementById('celebrate-btn').addEventListener('click', function () {
+    // Confetti burst
+    confetti({
+      particleCount: 200,
+      spread: 90,
+      origin: { y: 0.6 }
+    });
+
+    // Fireworks bursts
+    fireworksBurst();
+
+    // Emoji rain for 3 seconds
+    let emojiInterval = setInterval(createEmoji, 150);
+    setTimeout(() => clearInterval(emojiInterval), 3000);
+
+    // Balloons rising for 4 seconds
+    let balloonInterval = setInterval(createBalloon, 700);
+    setTimeout(() => clearInterval(balloonInterval), 4000);
+  });
+</script>
+
 </body>
 
 </html>
