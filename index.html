@@ -609,53 +609,10 @@
     </section>
 
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
-  const emojiArray = ['🎉', '🥳', '✨', '🎈', '🎊'];
-
-  // Create emoji rain container
-  const emojiContainer = document.createElement('div');
-  emojiContainer.style.position = 'fixed';
-  emojiContainer.style.top = 0;
-  emojiContainer.style.left = 0;
-  emojiContainer.style.width = '100%';
-  emojiContainer.style.height = '100%';
-  emojiContainer.style.pointerEvents = 'none';
-  emojiContainer.style.overflow = 'hidden';
-  emojiContainer.style.zIndex = 9999;
-  document.body.appendChild(emojiContainer);
-
-  // Balloon styles
-  const balloonColors = ['#ff4d4d', '#ffb84d', '#4d94ff', '#4dff88', '#ff4de6'];
-
-  function createEmoji() {
-    const emoji = document.createElement('div');
-    emoji.textContent = emojiArray[Math.floor(Math.random() * emojiArray.length)];
-    emoji.style.position = 'fixed';
-    emoji.style.fontSize = `${Math.random() * 30 + 20}px`;
-    emoji.style.left = `${Math.random() * window.innerWidth}px`;
-    emoji.style.top = '-50px';
-    emoji.style.opacity = Math.random();
-    emoji.style.willChange = 'transform, opacity';
-    emojiContainer.appendChild(emoji);
-
-    let fallDuration = Math.random() * 4000 + 4000; // 4-8 seconds
-
-    let start = null;
-    function fall(timestamp) {
-      if (!start) start = timestamp;
-      let progress = timestamp - start;
-      let percent = progress / fallDuration;
-      emoji.style.top = percent * window.innerHeight + 'px';
-      emoji.style.opacity = 1 - percent;
-      if (percent < 1) {
-        requestAnimationFrame(fall);
-      } else {
-        emojiContainer.removeChild(emoji);
-      }
-    }
-    requestAnimationFrame(fall);
-  }
+  // Balloon colors array
+  const balloonColors = ['#07f699', '#fee901', '#07f699', '#fee901', '#07f699', '#fee901'];
 
   function createBalloon() {
     const balloon = document.createElement('div');
@@ -691,39 +648,20 @@
     requestAnimationFrame(rise);
   }
 
-  function fireworksBurst() {
-    // 5 bursts with increasing spread and delay
-    for (let i = 0; i < 5; i++) {
-      setTimeout(() => {
-        confetti({
-          particleCount: 50,
-          spread: 60 + i * 10,
-          origin: { y: 0.7 }
-        });
-      }, i * 300);
-    }
-  }
-
   document.getElementById('celebrate-btn').addEventListener('click', function () {
-    // Confetti burst
+    // Single confetti burst
     confetti({
       particleCount: 200,
       spread: 90,
       origin: { y: 0.6 }
     });
 
-    // Fireworks bursts
-    fireworksBurst();
-
-    // Emoji rain for 3 seconds
-    let emojiInterval = setInterval(createEmoji, 150);
-    setTimeout(() => clearInterval(emojiInterval), 3000);
-
     // Balloons rising for 4 seconds
     let balloonInterval = setInterval(createBalloon, 700);
     setTimeout(() => clearInterval(balloonInterval), 4000);
   });
 </script>
+
 
 </body>
 
